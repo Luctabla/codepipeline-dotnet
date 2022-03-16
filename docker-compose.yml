@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+    dotnetapp:
+        build: .
+        environment:
+          - ASPNETCORE_URLS=http://+:80
+          - KEY_1=Lucas
+        ports:
+            - "5000:80"
